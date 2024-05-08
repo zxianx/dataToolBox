@@ -1,0 +1,60 @@
+mysql:
+  demoDb1:
+    service: demoDb1
+    database: demo
+    addr: 127.0.0.1:3306
+    user: root
+    password:
+    maxidleconns: 10
+    maxopenconns: 1000
+    connMaxLifeTime6: 90s
+    connTimeOut: 3s
+    writeTimeOut: 9500ms
+    readTimeOut: 9500ms
+  demoDb2:
+    service: demoDb2
+    database: datacenter
+    addr: 10.112.37.55:6060
+    user: homework
+    password: homework
+    maxidleconns: 10
+    maxopenconns: 1000
+    connMaxLifeTime6: 90s
+    connTimeOut: 3s
+    writeTimeOut: 9500ms
+    readTimeOut: 9500ms
+  demodb:
+    database: dcflow
+    addr: 10.112.37.55:6060
+    user: homework
+    password: homework
+    maxidleconns: 10
+    maxopenconns: 1000
+    connMaxLifeTime: 300s
+    connTimeOut: 1500ms
+    writeTimeOut: 1500ms
+    readTimeOut: 1500ms
+
+
+
+redis:
+  demo1:
+    service: demo1
+    addr: 127.0.0.1:8700
+    password:
+    maxIdle: 10
+    maxActive: 50
+    idleTimeout: 600s
+    connTimeOut: 1s
+    readTimeOut: 1s
+    writeTimeOut: 1s
+  demo2:
+    service: demo2
+    addr: 10.117.137.35:8700
+    password:
+    maxIdle: 10
+    maxActive: 50
+    idleTimeout: 600s
+    connTimeOut: 1s
+    readTimeOut: 1s
+    writeTimeOut: 1s
